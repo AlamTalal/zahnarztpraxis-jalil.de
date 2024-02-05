@@ -1,0 +1,29 @@
+.main {
+  margin-inline: 0px;
+  padding: 0px;
+  width: auto;
+}
+
+.main > ul > li {
+  float: left;
+  text-align: start;
+  margin-inline-end: 1.5rem;
+}
+
+.main > ul > li > a {
+  font-family: baloo_bhaijaan_2_regular;
+  color: var(--background-clr-1);
+  font-size: var(--step-2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight:  400;
+  line-height: 58px;
+}
+
+.main > ul > li > a:hover {
+  color: var(--foreground-clr-1);
+}
+
+.main > ul > li:last-child {
+  margin-inline-end: 0px;
+}

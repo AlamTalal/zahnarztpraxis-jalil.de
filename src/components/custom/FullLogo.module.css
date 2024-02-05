@@ -1,0 +1,25 @@
+.main > a {
+  display: flex;
+  justify-content: center;
+}
+
+.main > a > div > svg {
+  fill: var(--foreground-clr-1);
+  stroke: #000;
+  stroke-width: 6px;
+}
+
+.main > a > div > svg > g > path:nth-of-type(7), 
+.main > a > div > svg > g > path:nth-of-type(10) {
+  stroke: hsl(var(--clr-secondary-09));
+  stroke-width: 4rem;
+}
+
+.main > a > strong {
+  font-family: corinthia_bold;
+  color: var(--foreground-clr-1);
+  font-size: var(--step-6);
+  margin-inline-start: -6px;
+  margin-block-start: -4px;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+}

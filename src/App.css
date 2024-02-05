@@ -1,0 +1,114 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+} */
+
+
+/* screens:
+ * 'sm':  @media (min-width: 640px)
+ * 'md':  @media (min-width: 768px)
+ * 'lg':  @media (min-width: 1024px)
+ * 'xl':  @media (min-width: 1280px)
+ * '2xl': @media (min-width: 1536px)
+ */
+/* 
+:hover will not work on mobile devices but i still want to ensure it works the same way just by click
+.info-slide:hover, .info-slide:active {
+   height:300px;
+} */
+
+/* font: font-stretch font-variant font-style font-weight font-size/line height font-family */
+
+
+/* main {
+	max-height: calc(100dvh - 76px);
+	overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  --scrollbarBG: var(--background-clr-1);
+  --thumbBG: var(--background-clr-0);
+}
+
+main::-webkit-scrollbar {
+  width: 8px;
+}
+
+main::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 1px solid var(--scrollbarBG);
+} */
+
+
+/* -webkit-transform: translateY(-50%) scale(1, 1); */
+
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+/* 
+ * Extra small devices (phones, up to 480px)
+ * Small devices (tablets, 768px and up)
+ * Medium devices (big landscape tablets, laptops, and desktops, 992px and up)
+ * Large devices (large desktops, 1200px and up)
+ * portrait e-readers (Nook/Kindle), smaller tablets - min-width:481px
+ * portrait tablets, portrait iPad, landscape e-readers - min-width:641px
+ * tablet, landscape iPad, lo-res laptops - min-width:961px
+ * HTC One device-width: 360px device-height: 640px -webkit-device-pixel-ratio: 3
+ * Samsung Galaxy S2 device-width: 320px device-height: 534px -webkit-device-pixel-ratio: 1.5 (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5
+ * Samsung Galaxy S3 device-width: 320px device-height: 640px -webkit-device-pixel-ratio: 2 (min--moz-device-pixel-ratio: 2), - Older Firefox browsers (prior to Firefox 16) -
+ * Samsung Galaxy S4 device-width: 320px device-height: 640px -webkit-device-pixel-ratio: 3
+ * LG Nexus 4 device-width: 384px device-height: 592px -webkit-device-pixel-ratio: 2
+ * Asus Nexus 7 device-width: 601px device-height: 906px -webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332)
+ * iPad 1 and 2, iPad Mini device-width: 768px device-height: 1024px -webkit-device-pixel-ratio: 1
+ * iPad 3 and 4 device-width: 768px device-height: 1024px -webkit-device-pixel-ratio: 2)
+ * iPhone 3G device-width: 320px device-height: 480px -webkit-device-pixel-ratio: 1)
+ * iPhone 4 device-width: 320px device-height: 480px -webkit-device-pixel-ratio: 2)
+ * iPhone 5 device-width: 320px device-height: 568px -webkit-device-pixel-ratio: 2) 
+*/

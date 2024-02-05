@@ -1,0 +1,18 @@
+.icon {
+  --original-clr-0: #000000;
+  --original-clr-1: #00f6ef;
+  --original-clr-2: #ff004f;
+  --new-clr-0: var(--background-clr-0);
+  --new-clr-1: #00f6ef;
+  --new-clr-2: #ff004f;
+}
+
+.whiteClr{fill:var(--foreground-clr-1);}
+.innerClr{fill: var(--new-clr-0);}
+/* .line1Clr{fill: var(--new-clr-1);} */
+/* .line2Clr{fill: var(--new-clr-2);} */
+
+.icon > svg {
+  margin-top: -1px;
+  border-radius: 14px;
+}

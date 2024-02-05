@@ -1,0 +1,30 @@
+.style1 {
+  fill-opacity: 1;
+  fill-rule: nonzero;
+  stroke: none;
+  stroke-width: 0.025;
+}
+
+.style2 {
+  fill: none;
+  stroke-width:  1.6;
+  stroke-linecap:  round;
+  stroke-linejoin: round;
+  stroke-miterlimit:  10;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+}
+
+.fill0 {fill: #ffffff;}
+.fill1 {fill: #f2f2f7;}
+.fill2 {fill: #d6d6db;}
+.fill3 {fill: #c2c2c7;}
+.fill4 {fill: #3a3a3c;}
+.fill5 {fill: #ffbc8a;}
+
+.stroke0 {stroke: #ffffff;}
+.stroke1 {stroke: #f2f2f7;}
+.stroke2 {stroke: #d6d6db;}
+.stroke3 {stroke: #c2c2c7;}
+.stroke4 {stroke: #3a3a3c;}
+.stroke5 {stroke: #ffbc8a;}

@@ -1,0 +1,10 @@
+export { default as HeroInfoBox } from './HeroInfoBox';
+export { default as SocialIcons } from './SocialIcons';
+export { default as Navigation } from './Navigation';
+export { default as ContactBox } from './ContactBox';
+export { default as Schedule } from './Schedule';
+// export { default as Template } from './Template';
+export { default as FullLogo } from './FullLogo';
+export { default as Address } from './Address';
+export { default as SCard } from './SCard';
+export { default as TCard } from './TCard';

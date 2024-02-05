@@ -1,0 +1,106 @@
+.main {
+  padding-inline: clamp(1rem, 6%, 7rem);
+  padding-block: 0px;
+  border-top: 0px;
+  background-color: none;
+}
+
+.main > div {
+  max-width: 1920px;
+  margin-inline: auto;
+  border: 2px solid var(--foreground-clr-1);
+  background-color: var(--background-clr-0);
+  border-bottom: 0px;
+  border-radius: 2rem 2rem 0px 0px;
+  padding: 2rem 4rem;
+}
+
+@media (max-width: 868px) {
+  .main {
+    padding-inline: clamp(1rem, 6%, 7rem);
+    border-top: 2px solid var(--foreground-clr-1);
+    background-color: var(--background-clr-0);
+    padding-block: 2rem;
+  }
+  
+  .main > div {
+    border: 0px;
+    background-color: none;
+    border-radius: 0px;
+    padding: 0px;
+  }
+}
+
+.main > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  'logo address  schedule'
+  'logo address  schedule'
+  'logo contacts schedule'
+  'CC   contacts schedule';
+  justify-items: center;
+  align-items: center;
+}
+
+@media (max-width: 868px) {
+  .main > div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    'logo    contacts'
+    'logo    contacts'
+    'logo    contacts'
+    'address schedule'
+    'address schedule'
+    'CC      schedule';
+  }
+}
+
+@media (max-width: 568px) {
+  .main > div {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    'logo'
+    'address'
+    'contacts'
+    'schedule'
+    'CC';
+  }
+}
+
+.main > div > div:nth-of-type(1) {
+  grid-area: logo;
+}
+.main > div > div:nth-of-type(2) {
+  grid-area: CC;
+}
+.main > div > div:nth-of-type(3) {
+  grid-area: address;
+}
+.main > div > div:nth-of-type(4) {
+  grid-area: contacts;
+}
+.main > div > div:nth-of-type(5) {
+  grid-area: schedule;
+}
+
+/* Logo */
+.main > div > div:nth-of-type(1) > a > strong {
+  font-size: var(--step-8);
+  margin-inline-start: -8px;
+}
+
+.main > div > div:nth-of-type(2) > p {
+  font-size: var(--step--5);
+  color: var(--foreground-clr-0);
+  line-height: 20px;
+  margin-block-start: 0.5rem;
+}
+
+.main > div > div:nth-of-type(2) > p > span {
+  font-size: var(--step--3);
+  color: var(--foreground-clr-1);
+}

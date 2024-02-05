@@ -1,0 +1,77 @@
+.main {
+  width: fit-content;
+  color: var(--foreground-clr-0);
+}
+
+.main > ul > li {
+  display: flex;
+  width: 200px;
+}
+
+.main > ul > li:nth-of-type(2) {
+  border-top: 2px solid var(--foreground-clr-1);
+  margin-block-start: 4px;
+  padding-block-start: 4px;
+}
+
+.main > ul > li > div:first-child {
+  border-right: 1px solid var(--foreground-clr-1);
+  width: 88px;
+}
+
+.main > ul > li > div:last-child {
+  width: 112px;
+}
+
+.main > ul > li > div > span,
+.main > ul > li > div > div, 
+.main > ul > li:nth-of-type(1) > div > small {
+  display: block;
+  width: 100%;
+}
+
+.main > ul > li > div > div > span {
+  width: 40px;
+}
+
+.main > ul > li > div > span,
+.main > ul > li > div > div > span {
+  text-align: center;
+}
+
+.main > ul > li:nth-of-type(1) > div {
+  padding-block-end: 2px;
+}
+
+.main > ul > li:nth-of-type(1) > div:nth-of-type(1) {
+  padding-inline-end: 4px;
+}
+
+.main > ul > li:nth-of-type(2) > div {
+  padding-block-start: 2px;
+}
+
+.main > ul > li > div:nth-of-type(2) {
+  padding-inline-start: 2px;
+}
+
+.main > ul > li:nth-of-type(1) > div > small {
+  display: block;
+  font-size: var(--step--2);
+  text-align: center;
+  color: var(--foreground-clr-1);
+}
+
+.main > ul > li > div:nth-of-type(2) > div {
+  display: flex;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.main > ul > li > div:nth-of-type(2) > div > svg {
+  stroke: currentColor;
+  display: inline;
+  fill: none;
+  width: 24px;
+  padding-inline: 4px;
+}

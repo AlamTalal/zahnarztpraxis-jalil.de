@@ -1,0 +1,17 @@
+.main {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main > a > span {
+  display: block;
+  color: var(--foreground-clr-1);
+  width: max-content;
+}
+
+.main > div {
+  margin-block-start: 2px;
+  display: flex;
+}

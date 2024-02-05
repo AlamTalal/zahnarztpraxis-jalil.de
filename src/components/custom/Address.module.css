@@ -1,0 +1,21 @@
+.main {}
+
+.main > a > span {
+  display: block;
+  color: var(--foreground-clr-0);
+}
+
+.main > a > span:first-child {
+  position: relative;
+  padding-inline-start: 18px;
+  margin-inline-start: 30px;
+}
+
+.main > a > span:first-child::before {
+  content: url('../../assets/svg/location.svg');
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  bottom: -3px;
+  left: 0;
+}

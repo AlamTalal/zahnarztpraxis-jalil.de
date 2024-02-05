@@ -1,0 +1,20 @@
+.icon {
+  --original-clr-1: #3f456b;
+  --original-clr-2: #8cc0f4;
+  --new-clr-1: var(--background-clr-0);
+  --new-clr-2: var(--foreground-clr-1);
+}
+
+.icon > svg {
+  border-radius: 0.5rem;
+}
+
+.icon > svg > g > path:nth-of-type(1) {
+  fill: var(--new-clr-1);
+}
+
+.icon > svg > g > path:nth-of-type(4) {
+  fill: var(--new-clr-2);
+  stroke-width: 1.5px;
+  stroke: black;
+}

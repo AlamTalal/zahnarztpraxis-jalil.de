@@ -1,0 +1,165 @@
+@import url(./assets/fonts/fonts.css);
+@import url(./preflight.css);
+@import url('swiper/css');
+
+/* @import url('swiper/css/thumbs'); */
+/* @import url('swiper/css/free-mode'); */
+/* @import url('swiper/css/navigation'); */
+
+:root {
+	--clr-primary-00: 165,    21.05%, 92.55%;
+	--clr-primary-01: 169.41, 20%,    83.33%;
+	--clr-primary-02: 168,    19.08%, 74.31%;
+	--clr-primary-03: 169.41, 19.32%, 65.49%;
+	--clr-primary-04: 169.09, 19.82%, 56.47%;
+	--clr-primary-05: 169.81, 21.81%, 47.65%;
+	--clr-primary-06: 171.43, 31.98%, 38.63%;
+	--clr-primary-07: 173.16, 54.48%, 28.43%;
+	--clr-primary-08: 172.94, 63.91%, 26.08%;
+	--clr-primary-09: 174.38, 100%,   18.82%;
+	--clr-primary-10: 172.86, 100%,   16.47%;
+	--clr-primary-11: 173.24, 100%,   13.92%;
+	--clr-primary-12: 171.86, 100%,   11.57%;
+	--clr-primary-13: 171.06, 100%,   9.22%;
+	--clr-primary-14: 126.32, 100%,   3.73%;
+	--clr-primary-15: 168.65, 100%,   7.25%;
+	--clr-primary-16: 159.31, 100%,   5.69%;
+
+	--clr-secondary-00: 42.86, 100%,   97.25%;
+	--clr-secondary-01: 40.65, 100%,   93.92%;
+	--clr-secondary-02: 41.63, 100%,   90.39%;
+	--clr-secondary-03: 42.46, 97.01%, 86.86%;
+	--clr-secondary-04: 42.96, 95.29%, 83.33%;
+	--clr-secondary-05: 43.75, 92.31%, 79.61%;
+	--clr-secondary-06: 44.46, 90.32%, 75.69%;
+	--clr-secondary-07: 44.88, 88.81%, 71.96%;
+	--clr-secondary-08: 45.23, 87.84%, 70.98%;
+	--clr-secondary-09: 45.71, 60.58%, 59.22%;
+	--clr-secondary-10: 46.72, 50.41%, 47.45%;
+	--clr-secondary-11: 47.6,  66.12%, 35.88%;
+	--clr-secondary-12: 49.67, 100%,   23.92%;
+	--clr-secondary-13: 48.39, 100%,   18.24%;
+	--clr-secondary-14: 45.67, 100%,   13.14%;
+	--clr-secondary-15: 33.75, 100%,   9.41%;
+	--clr-secondary-16: 0, 	   100%,   7.06%;
+
+  --step--5: clamp(0.5550rem, 0.5309rem + 0.1207vw, 0.6244rem);  /* Step -5: 08.88px → 09.99px */
+  --step--4: clamp(0.6244rem, 0.5972rem + 0.1359vw, 0.7025rem);  /* Step -4: 09.99px → 11.24px */
+  --step--3: clamp(0.7025rem, 0.6721rem + 0.1522vw, 0.7900rem);  /* Step -3: 11.24px → 12.64px */
+  --step--2: clamp(0.7900rem, 0.7557rem + 0.1717vw, 0.8888rem);  /* Step -2: 12.64px → 14.22px */
+  --step--1: clamp(0.8888rem, 0.8501rem + 0.1935vw, 1.0000rem);  /* Step -1: 14.22px → 16.00px */
+  --step-0:  clamp(1.0000rem, 0.9565rem + 0.2174vw, 1.1250rem);  /* Step 0:  16.00px → 18.00px */
+  --step-1:  clamp(1.1250rem, 1.0761rem + 0.2446vw, 1.2656rem);  /* Step 1:  18.00px → 20.25px */
+  --step-2:  clamp(1.2656rem, 1.2106rem + 0.2750vw, 1.4238rem);  /* Step 2:  20.25px → 22.78px */
+  --step-3:  clamp(1.4238rem, 1.3618rem + 0.3098vw, 1.6019rem);  /* Step 3:  22.78px → 25.63px */
+  --step-4:  clamp(1.6019rem, 1.5323rem + 0.3478vw, 1.8019rem);  /* Step 4:  25.63px → 28.83px */
+  --step-5:  clamp(1.8019rem, 1.7234rem + 0.3924vw, 2.0275rem);  /* Step 5:  28.83px → 32.44px */
+  --step-6:  clamp(2.0275rem, 1.9395rem + 0.4402vw, 2.2806rem);  /* Step 6:  32.44px → 36.49px */
+  --step-7:  clamp(2.2806rem, 2.1815rem + 0.4957vw, 2.5656rem);  /* Step 7:  36.49px → 41.05px */
+  --step-8:  clamp(2.5656rem, 2.4541rem + 0.5576vw, 2.8863rem);  /* Step 8:  41.05px → 46.18px */
+	
+	--background-clr-0: hsl(var(--clr-primary-09));
+	--background-clr-1: hsl(var(--clr-primary-00));
+	--background-clr-2: hsl(var(--clr-primary-01));
+	--foreground-clr-0: hsl(var(--clr-secondary-04));
+	--foreground-clr-1: hsl(var(--clr-secondary-08));
+
+  --thumbBG: var(--background-clr-1);
+	--scrollbarBG: var(--background-clr-0);
+
+	scroll-behavior: smooth;
+	scroll-padding-top: 76px;
+	
+	/* corinthia_bold, baloo_bhaijaan_2_regular, hahmlet_regular */
+	font-family: baloo_bhaijaan_2_regular;
+	font-size: 16px;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--background-clr-1);
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+/* Preload Images */
+body:after {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	z-index: -100;
+	content: url('/assets/img/hero/H1.jpg')  url('/assets/img/hero/H2.jpg')  url('/assets/img/hero/H3.jpg');
+}
+
+body::-webkit-scrollbar {
+	width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 1px solid var(--scrollbarBG);
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	border: 0px;
+}
+
+button:focus-visible {
+	outline: 0px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+p {
+	font-size: var(--step-1);
+	color: hsl(var(--clr-primary-12));
+}
+
+span {
+	font-size: var(--step--1);
+	line-height: calc(var(--step--2) * 1.2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: hahmlet_regular, sans-serif;
+	color: hsl(var(--clr-primary-11));
+	font-weight: 600;
+}
+
+h1, h1 > span {
+	font-size: var(--step-7);
+}
+
+h2 {
+	font-size: var(--step-4);
+	text-decoration: underline;
+}
+
+h3 {
+	font-size: var(--step-2);
+}
+
+h4 {
+	font-size: var(--step-1);
+}
+
+h5 {
+	font-size: var(--step-0);
+}

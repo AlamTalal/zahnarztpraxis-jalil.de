@@ -1,0 +1,35 @@
+.icon {
+  --original-clr-1: #3f456b;
+  --original-clr-2: #ff6e8d;
+  --new-clr-1: var(--foreground-clr-1);
+  --new-clr-2: var(--background-clr-0);
+}
+
+.icon > svg {
+  margin-block-start: -1px;
+  fill: var(--background-clr-0);
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
+.icon > svg > circle {
+  fill: var(--background-clr-0);
+}
+
+.icon > svg > path:nth-of-type(1) {
+  fill: var(--background-clr-0);
+  stroke: var(--background-clr-0);
+  stroke-width: 14px;
+}
+
+.icon > svg > path:nth-of-type(2) {
+  fill: var(--foreground-clr-1);
+}
+
+.icon > svg > path:nth-of-type(3) {
+  fill: var(--foreground-clr-1);
+}
+
+.icon > svg > path:nth-of-type(4) {
+  fill: var(--foreground-clr-1);
+}
